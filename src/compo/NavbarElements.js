@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 
 export const Nav = styled.nav`
-    background:  darkgreen;
+    background:  #40531b;
     height: 85px;
     display: flex;
     justify-content: space-between;

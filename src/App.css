@@ -101,6 +101,7 @@
 .home-details-info h4 {
     font-size: 1.9vw;
     font-weight: 800;
+    text-align: left; 
 }
 
 .home-body {
@@ -140,8 +141,8 @@
 
 .home-body-tv {
     position: relative;
-    top: 70px;
-    left: 250px;
+    top: 85px;
+    left: 240px;
 
 }
 
@@ -165,3 +166,10 @@
 .media-heading {
     margin: 0 0 .5em;
 }
+.sub-nav ul {
+        text-align: center;
+        }
+    ul { 
+        
+        text-align: left; 
+        }

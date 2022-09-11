@@ -76,7 +76,6 @@ const data2 = [
           people don't develop any symptoms (asymptomatic). In general, people
           with COVID-19 report some of the following symptoms:{" "}
           <ul>
-            <li></li>
             <li>Fever or chills.</li>
             <li>Cough.</li>
             <li>Shortness of breath or difficulty breathing.</li>
