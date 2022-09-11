@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 
 export const Nav = styled.nav`
-    background: orangered;
+    background:  darkgreen;
     height: 85px;
     display: flex;
     justify-content: space-between;
@@ -24,8 +24,10 @@ export const NavLogo = styled(Link)`
 export const NavLink = styled(Link)`
 color: #fff;
 display: flex;
+font-family: Century Gothic;
 align-items: center;
 text-decoration: none;
+font-weight: bold;
 padding: 0 1rem;
 height: 100%;
 cursor: pointer;
@@ -50,6 +52,7 @@ export const Bars = styled(FaBars)`
 
 export const NavMenu = styled.div`
   display: flex;
+  
   align-items: center;
   margin-right: -24px;
 

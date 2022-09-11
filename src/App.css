@@ -1,28 +1,121 @@
 .header {
-    height: calc(100vh - 85px);
+    height: calc(135vh - 85px);
     background-image: url('./assets/bg.jpg');
     display: flex;
     justify-content: center;
     align-items: center;
+    background-size: cover;
 }
-
 
 .header-content {
     color: white;
     text-align: center;
-    width: 80vw;
+    width: 90vw;
     backdrop-filter: blur(5px);
     background-color: rgba(0, 0, 0, 0.5);
-    padding: 80px 80px;
-    border-radius: 20px;
+    border-radius: 15px;
 }
 
 .header-title {
-    font-size: 80px;
-    font-weight: 700;
+    font-size: 45px;
+    font-weight: 900;
+    font-family: Century Gothic;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin: 0 0 .5em; 
+}
+
+.img{
+    background: url(assets/elemets/1header.jpg);
+    height: 160px;
+    width: 290px;
+    background-size: cover;
+    float: left;
+    margin: 1em; 
+}
+
+.head2{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 900;
+    font-family: Century Gothic;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.head3{
+    text-align: center;
+    font-size: 45px;
+    font-weight: 900;
+    font-family: Century Gothic;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.header-text{
+    font-size:  20px;
+    font-weight: 90;
+    font-family: Century Gothic;
+    text-align: left;
+    margin: 1%;
+
 }
 
 .home-body {
+  
+    background-color:lightgray;
     height: 100vh;
-    background-color: lightsalmon;
+
 }
+.home-foot {
+  
+    background-color:black;
+    height: 100vh;
+
+}
+
+.logo{
+    background-image: url('./assets/logo.jpg');
+    height: 80px;
+    width: 80px;
+    background-size: cover;
+    position: relative;
+    right:230px;  
+    
+   
+}
+
+.home-body-nav{
+    @media all and (max-width: 800px) {
+        .navigation {
+          /* When on medium sized screens, we center it by evenly distributing empty space around items */
+          justify-content: space-around;
+          
+        }
+        
+      }
+}
+.home-body-tv{
+    position: relative;
+    top: 70px;
+    left: 80px;
+    
+}
+
+.media {
+    display: flex;
+    align-items: flex-start;
+    background: #F6F3EB;
+    padding: 1em;
+    border-radius: 3px;
+    max-width: 24em;
+  }
+
+  .media-body {
+    flex: 1;
+  }
+  .media-body2 {
+    flex: 1;
+  }
+  .media-heading {
+    margin: 0 0 .5em;
+  }

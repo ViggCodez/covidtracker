@@ -1,5 +1,5 @@
 import React from "react";
-import {Logo} from "../src/assets/bg.jpg"
+
 import {
     Nav,
     NavLink,
@@ -14,7 +14,7 @@ const Navbar = () => {
         
            <Nav>
             <NavLogo to="/">
-             Logo
+             <div className="logo"></div>
             </NavLogo>
             <Bars />
             <NavMenu>
