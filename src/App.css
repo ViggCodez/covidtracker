@@ -11,48 +11,21 @@
     color: white;
     text-align: center;
     width: 90vw;
-    backdrop-filter: blur(5px);
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 15px;
+    padding: 60px 40px;
+    backdrop-filter: blur(7px);
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 22px;
 }
 
 .header-title {
-    font-size: 45px;
+    font-size: 5vw;
     font-weight: 900;
     font-family: Century Gothic;
-    margin-top: 10px;
-    margin-bottom: 30px;
-    margin: 0 0 .5em; 
+    margin: 0 0 .5em;
 }
 
-.img{
-    background: url(assets/elemets/1header.jpg);
-    height: 160px;
-    width: 290px;
-    background-size: cover;
-    float: left;
-    margin: 1em; 
-}
-
-.head2{
-    text-align: center;
-    font-size: 45px;
-    font-weight: 900;
-    font-family: Century Gothic;
-    margin-bottom: 30px;
-    margin-top: 20px;
-}
-
-.head3{
-    text-align: center;
-    font-size: 45px;
-    font-weight: 900;
-    font-family: Century Gothic;
-    margin-bottom: 30px;
-    margin-top: 20px;
-}
-.header-text{
-    font-size:  20px;
+.header-text {
+    font-size: 18px;
     font-weight: 90;
     font-family: Century Gothic;
     text-align: left;
@@ -60,45 +33,116 @@
 
 }
 
+.img {
+    background: url('assets/elemets/1header.jpg');
+    height: 160px;
+    width: 290px;
+    background-size: cover;
+    float: left;
+    margin: 1em;
+}
+
+.head2 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 900;
+    font-family: Century Gothic;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+.head3 {
+    text-align: center;
+    font-size: 45px;
+    font-weight: 900;
+    font-family: Century Gothic;
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+
+
+.home-details {
+    height: 100vh;
+}
+
+.home-details .sub-nav {
+    padding: 40px 24px 32px;
+    display: flex;
+    justify-content: center;
+    gap: 5.5vw;
+    background-color: blanchedalmond;
+}
+
+.home-details .sub-nav .item {
+    font-size: 1.6vw;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.home-details .home-details-content {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 0px 40px;
+}
+
+.home-details .home-details-content .home-details-title {
+    margin-top: 20px;
+    font-size: 2.8vw;
+    font-weight: 800;
+}
+
+.home-details-info {
+    font-size: 1.5vw;
+    font-weight: 400;
+}
+
+.home-details-info h4 {
+    font-size: 1.9vw;
+    font-weight: 800;
+}
+
 .home-body {
-  
-    background-color:lightgray;
+    background-color: lightgray;
     height: 100vh;
 
 }
+
 .home-foot {
-  
-    background-color:black;
+
+    background-color: black;
     height: 100vh;
 
 }
 
-.logo{
+.logo {
     background-image: url('./assets/logo.jpg');
     height: 80px;
     width: 80px;
     background-size: cover;
     position: relative;
-    right:230px;  
-    
-   
+    right: 230px;
+
+
 }
 
-.home-body-nav{
+.home-body-nav {
     @media all and (max-width: 800px) {
         .navigation {
-          /* When on medium sized screens, we center it by evenly distributing empty space around items */
-          justify-content: space-around;
-          
+            /* When on medium sized screens, we center it by evenly distributing empty space around items */
+            justify-content: space-around;
+
         }
-        
-      }
+
+    }
 }
-.home-body-tv{
+
+.home-body-tv {
     position: relative;
     top: 70px;
     left: 80px;
-    
+
 }
 
 .media {
@@ -108,14 +152,16 @@
     padding: 1em;
     border-radius: 3px;
     max-width: 24em;
-  }
+}
 
-  .media-body {
+.media-body {
     flex: 1;
-  }
-  .media-body2 {
+}
+
+.media-body2 {
     flex: 1;
-  }
-  .media-heading {
+}
+
+.media-heading {
     margin: 0 0 .5em;
-  }
+}
