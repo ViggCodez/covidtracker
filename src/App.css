@@ -101,7 +101,7 @@
 .home-details-info h4 {
     font-size: 1.9vw;
     font-weight: 800;
-    text-align: left; 
+    text-align: left;
 }
 
 .home-body {
@@ -166,10 +166,28 @@
 .media-heading {
     margin: 0 0 .5em;
 }
+
 .sub-nav ul {
-        text-align: center;
-        }
-    ul { 
-        
-        text-align: left; 
-        }
+    text-align: center;
+}
+
+ul {
+
+    text-align: left;
+}
+
+.nav-button {
+    color: #fff;
+    display: flex;
+    font-family: Century Gothic;
+    align-items: center;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+}
+
+.nav-button:hover {
+    color: black;
+}

@@ -1,5 +1,7 @@
 import React from "react";
 
+import { useNavigate } from "react-router-dom";
+
 import {
   Nav,
   NavLink,
@@ -8,46 +10,40 @@ import {
   NavLogo,
 } from './NavbarElements';
 
-const Navbar = () => {
+function NavButton(params) {
+  const navigate = useNavigate();
+  return (
+    <div
+      className="nav-button"
+      onClick={() => navigate(params.path)}>
+      {params.text}
+    </div>
+  );
+}
+
+function Navbar(props) {
   return (
     <>
-
       <Nav>
         <NavLogo to="/">
           <div className="logo"></div>
         </NavLogo>
         <Bars />
         <NavMenu>
-          <NavLink
-            to="/"
-            activestyle={{ color: 'black' }}
-          >
-            Home
-          </NavLink>
-          <NavLink
-            to="/coviddata"
-            activestyle={{ color: 'black' }}
-          >
-            Country
-          </NavLink>
-          <NavLink
-            to="/statewise"
-            activestyle={{ color: 'black' }}
-          >
-            Statewise
-          </NavLink>
-          <NavLink
-            to="/formdata"
-            activestyle={{ color: 'black' }}
-          >
-            Form
-          </NavLink>
-
-
+          <NavButton text='Home' path='/' />
+          <NavButton text='Country' path='/coviddata' />
+          <NavButton text='State' path='/statewise' />
+          {
+            props.user !== null ?
+              <NavButton text='Login' path="/login" />
+              :
+              <NavButton text='Registration' path="/registration" />
+          }
 
         </NavMenu>
       </Nav>
     </>
   );
-};
+}
+
 export default Navbar;
