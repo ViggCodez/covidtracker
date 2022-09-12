@@ -4,7 +4,7 @@ import './App.css';
 
 class Login extends React.Component {
 	constructor() {
-		super();
+		super(); //used to call parent class
 		this.state = {
 			isLoggedIn: localStorage.getItem('token') !== null ? true : false,
 			fields: {},
