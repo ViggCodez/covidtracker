@@ -18,7 +18,7 @@ class Formdata extends Component {
           { value: "No", name: "No" },
         ],
         validWhen: false,
-        message: "\n Please Select if yes or No",
+        message: "",
       },
       {
         field: "full_name",
@@ -61,7 +61,7 @@ class Formdata extends Component {
         type: "radio",
         options: [
           { value: "Male", name: "Male" },
-          { value: "Female", name: "Female" },
+          { value: "n Female", name: "Female" },
           { value: "Other", name: "Other" },
         ],
         validWhen: true,
@@ -110,7 +110,10 @@ class Formdata extends Component {
     this.submitted = false;
   }
 
-  passwordMatch = (confirmation, state) => state.password === confirmation;
+
+  
+//handles textbox
+
   handleInputChange = (event) => {
     event.preventDefault();
     this.setState({
